@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from srbthemes.kcubeinfotech.com/kalles/docs/laravel/structure.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Feb 2026 06:03:23 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structure | Kalles Laravel clean versatile Bootstrap Template</title>
+    <link rel="shortcut icon" href="images/k-fav.ico" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com/"></script>
+    <script defer src="../../../../cdn.jsdelivr.net/npm/alpinejs%403.14.0/dist/cdn.min.js"></script>
+</head>
+
+<body class="text-white bg-dark-900" x-data="{ isMenuOpen: false }">
+    <div class="fixed left-0 inset-y-0 lg:flex flex-col bg-dark text-slate-700 w-full max-w-[18rem] p-4 shadow shadow-slate-500 border-slate-600 border-r z-50" :class="isMenuOpen ? 'flex' : 'hidden'">
+        <div class="mb-4 px-4 mx-auto">
+            <a href="#!" class="text-white">
+                <svg width="104" height="30" viewBox="0 0 104 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path id="bayleys" fill-rule="evenodd" clip-rule="evenodd" stroke-dasharray="1200 1000" d="M21.71 30.6424L12.7888 19.8206L21.516 8.99875H13.7206L7.24306 17.6872V1.93935H0.608398V30.6424H7.24112V21.4497L13.7206 30.6424H21.7109H21.71ZM28.7655 8.72723C27.073 8.70139 25.4092 9.16617 23.9752 10.0654C22.5236 11.0054 21.3672 12.3366 20.6394 13.9054C19.7855 15.7578 19.3675 17.7814 19.4176 19.8206C19.3715 21.8531 19.7893 23.8695 20.6394 25.7163C21.363 27.293 22.5199 28.6315 23.9752 29.5757C25.4092 30.475 27.073 30.9397 28.7655 30.9139C30.2661 30.9555 31.7471 30.565 33.0321 29.789C34.2032 29.0604 35.1235 27.9912 35.6697 26.7248V30.6424H42.2637V8.99487H35.6697V12.9124C35.1233 11.6462 34.203 10.577 33.0321 9.8482C31.7466 9.07376 30.2657 8.6847 28.7655 8.72723ZM30.8988 14.5454C31.5387 14.5245 32.1756 14.64 32.7675 14.8841C33.3593 15.1281 33.8924 15.4953 34.3315 15.9612C35.2666 17.0223 35.7472 18.4084 35.6697 19.8206C35.7406 21.226 35.2605 22.6036 34.3315 23.6606C33.8954 24.1315 33.3633 24.5034 32.7711 24.751C32.1788 24.9986 31.5404 25.1161 30.8988 25.0957C30.26 25.1221 29.623 25.0112 29.0308 24.7703C28.4386 24.5294 27.905 24.1642 27.4661 23.6994C26.5478 22.623 26.0821 21.2329 26.1667 19.8206C26.0822 18.4083 26.5479 17.0182 27.4661 15.9418C27.905 15.477 28.4386 15.1118 29.0308 14.8709C29.623 14.63 30.26 14.519 30.8988 14.5454ZM44.5715 1.93935V30.6424H51.2043V1.93935H44.5715ZM54.0474 1.93935V30.6424H60.6801V1.93935H54.0474ZM84.139 19.2387C84.1772 17.3241 83.716 15.4325 82.8009 13.7503C81.9249 12.1759 80.6113 10.8892 79.019 10.046C77.2577 9.17521 75.3186 8.72383 73.3537 8.7272C71.3888 8.73056 69.4514 9.18858 67.693 10.0654C66.057 10.9382 64.7147 12.2739 63.8336 13.9054C62.8784 15.7277 62.4045 17.7638 62.4566 19.8206C62.409 21.873 62.8898 23.9033 63.853 25.7163C64.7369 27.3506 66.0781 28.6918 67.7124 29.5757C69.3435 30.3999 71.136 30.8549 72.9626 30.9086C74.7893 30.9622 76.6055 30.6131 78.2821 29.886C79.7032 29.242 80.9523 28.2719 81.9281 27.0545C82.8783 25.8658 83.5181 24.4596 83.7899 22.9624H76.7693C76.5721 23.7234 76.1204 24.3941 75.4893 24.863C74.7797 25.3741 73.9196 25.6335 73.0457 25.6C71.9854 25.6391 70.9529 25.2554 70.1754 24.5333C69.3265 23.5659 68.8821 22.309 68.9342 21.023H83.9451C84.068 20.436 84.1329 19.8384 84.139 19.2387ZM77.4297 18.2303H68.974C68.9896 17.0326 69.4775 15.8895 70.3315 15.0497C71.164 14.314 72.2467 13.9254 73.357 13.9636C74.4336 13.9318 75.4815 14.3135 76.2855 15.0303C76.7 15.4465 77.0175 15.9492 77.2153 16.5024C77.4131 17.0555 77.4863 17.6455 77.4297 18.2303ZM93.3124 8.72723C91.0847 8.58676 88.8773 9.22429 87.0675 10.5309C86.3568 11.0894 85.7867 11.8065 85.4028 12.6249C85.0189 13.4432 84.8318 14.34 84.8566 15.2436C84.7841 16.5245 85.1844 17.7874 85.9815 18.7927C86.6994 19.6368 87.6204 20.2843 88.6578 20.6739C89.9479 21.1333 91.2703 21.4963 92.6142 21.76C93.8002 21.995 94.962 22.3391 96.0847 22.7878C96.4086 22.9108 96.6858 23.1322 96.8771 23.421C97.0685 23.7098 97.1644 24.0513 97.1514 24.3975C97.1612 24.6556 97.1141 24.9128 97.0136 25.1507C96.913 25.3886 96.7615 25.6016 96.5696 25.7745C96.0858 26.1556 95.4772 26.3423 94.8629 26.2981C93.9216 26.3398 92.9913 26.0818 92.2059 25.5612C91.8645 25.314 91.5816 24.9947 91.3772 24.6261C91.1727 24.2574 91.0518 23.8484 91.0229 23.4278H84.6229C84.7583 24.5215 85.1133 25.5766 85.6665 26.5298C86.2197 27.4829 86.9598 28.3145 87.8423 28.9745C89.9131 30.3591 92.3751 31.0392 94.8629 30.9139C96.4021 30.9499 97.9325 30.6728 99.3613 30.0993C100.524 29.6385 101.532 28.8586 102.27 27.8497C102.946 26.8845 103.299 25.7305 103.279 24.5527C103.348 23.2362 102.934 21.9398 102.115 20.9066C101.379 20.0297 100.431 19.3555 99.3613 18.9478C98.0303 18.4674 96.6699 18.0723 95.2886 17.7648C94.1384 17.5454 93.014 17.2074 91.9335 16.7563C91.622 16.644 91.3526 16.4386 91.1618 16.168C90.971 15.8974 90.868 15.5747 90.8668 15.2436C90.8519 14.9849 90.8966 14.7262 90.9975 14.4874C91.0984 14.2487 91.2527 14.0363 91.4486 13.8666C91.9433 13.5105 92.5472 13.3389 93.1553 13.3818C94.0137 13.3503 94.8565 13.6176 95.5398 14.1381C96.1843 14.6596 96.6183 15.3967 96.7616 16.2133H102.968C102.627 14.091 101.532 12.1628 99.884 10.783C98.0088 9.33585 95.678 8.60673 93.3124 8.72723Z"></path>
+                </svg>
+            </a>
+        </div>
+        <nav class="flex flex-col gap-1 min-w-[240px] p-2 font-sans text-base font-normal text-gray-200">
+            <a href="index.html" tabindex="0" class="flex items-center w-full p-3 rounded-lg text-start leading-tight transition-all hover:bg-gray-800/20 hover:bg-opacity-80 focus:bg-slate-500/20 focus:bg-opacity-80 active:bg-slate-500/20 hover:text-sky-500 focus:text-sky-500 active:text-sky-500 outline-none">
+                <div class="grid place-items-center mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
+                    </svg>
+                </div>
+                Introduction
+            </a>
+            <a href="installation.html" tabindex="0" class="flex items-center w-full p-3 rounded-lg text-start leading-tight transition-all hover:bg-gray-800/20 hover:bg-opacity-80 focus:bg-slate-500/20 focus:bg-opacity-80 active:bg-slate-500/20 hover:text-sky-500 focus:text-sky-500 active:text-sky-500 outline-none">
+                <div class="grid place-items-center mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m7.875 14.25 1.214 1.942a2.25 2.25 0 0 0 1.908 1.058h2.006c.776 0 1.497-.4 1.908-1.058l1.214-1.942M2.41 9h4.636a2.25 2.25 0 0 1 1.872 1.002l.164.246a2.25 2.25 0 0 0 1.872 1.002h2.092a2.25 2.25 0 0 0 1.872-1.002l.164-.246A2.25 2.25 0 0 1 16.954 9h4.636M2.41 9a2.25 2.25 0 0 0-.16.832V12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 12V9.832c0-.287-.055-.57-.16-.832M2.41 9a2.25 2.25 0 0 1 .382-.632l3.285-3.832a2.25 2.25 0 0 1 1.708-.786h8.43c.657 0 1.281.287 1.709.786l3.284 3.832c.163.19.291.404.382.632M4.5 20.25h15A2.25 2.25 0 0 0 21.75 18v-2.625c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125V18a2.25 2.25 0 0 0 2.25 2.25Z" />
+                    </svg>
+                </div>
+                Installation
+            </a>
+            <a href="structure.html" tabindex="0" class="flex items-center w-full p-3 rounded-lg text-start leading-tight transition-all hover:bg-gray-800/20 hover:bg-opacity-80 focus:bg-slate-500/20 focus:bg-opacity-80 active:bg-slate-500/20 hover:text-sky-500 focus:text-sky-500 active:text-sky-500 outline-none active">
+                <div class="grid place-items-center mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5">
+                        <rect width="18" height="7" x="3" y="3" rx="1" />
+                        <rect width="7" height="7" x="3" y="14" rx="1" />
+                        <rect width="7" height="7" x="14" y="14" rx="1" />
+                    </svg>
+                </div>
+                Structure
+            </a>
+            <a href="css-javascript.html" tabindex="0" class="flex items-center w-full p-3 rounded-lg text-start leading-tight transition-all hover:bg-gray-800/20 hover:bg-opacity-80 focus:bg-slate-500/20 focus:bg-opacity-80 active:bg-slate-500/20 hover:text-sky-500 focus:text-sky-500 active:text-sky-500 outline-none">
+                <div class="grid place-items-center mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5">
+                        <path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3" />
+                    </svg>
+                </div>
+                SCSS & Javascript
+            </a>
+            <a href="demo.html" tabindex="0" class="flex items-center w-full p-3 rounded-lg text-start leading-tight transition-all hover:bg-gray-800/20 hover:bg-opacity-80 focus:bg-slate-500/20 focus:bg-opacity-80 active:bg-slate-500/20 hover:text-sky-500 focus:text-sky-500 active:text-sky-500 outline-none">
+                <div class="grid place-items-center mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H6.911a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661Z" />
+                    </svg>
+                </div>
+                Demos
+            </a>
+            <a href="credit.html" tabindex="0" class="flex items-center w-full p-3 rounded-lg text-start leading-tight transition-all hover:bg-gray-800/20 hover:bg-opacity-80 focus:bg-slate-500/20 focus:bg-opacity-80 active:bg-slate-500/20 hover:text-sky-500 focus:text-sky-500 active:text-sky-500 outline-none">
+                <div class="grid place-items-center mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5">
+                        <circle cx="12" cy="12" r="2" />
+                        <path d="M12 2v4" />
+                        <path d="m6.8 15-3.5 2" />
+                        <path d="m20.7 7-3.5 2" />
+                        <path d="M6.8 9 3.3 7" />
+                        <path d="m20.7 17-3.5-2" />
+                        <path d="m9 22 3-8 3 8" />
+                        <path d="M8 22h8" />
+                        <path d="M18 18.7a9 9 0 1 0-12 0" />
+                    </svg>
+                </div>
+                Credit & Resources
+            </a>
+            <a href="#" target="_blank" tabindex="0" class="flex items-center w-full p-3 rounded-lg text-start leading-tight transition-all hover:bg-gray-800/20 hover:bg-opacity-80 focus:bg-slate-500/20 focus:bg-opacity-80 active:bg-slate-500/20 hover:text-sky-500 focus:text-sky-500 active:text-sky-500 outline-none">
+                <div class="grid place-items-center mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5">
+                        <path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z" />
+                        <path d="M21 16v2a4 4 0 0 1-4 4h-5" />
+                    </svg>
+                </div>
+                Support
+            </a>
+            <a href="changelog.html" tabindex="0" class="flex items-center w-full p-3 rounded-lg text-start leading-tight transition-all hover:bg-gray-800/20 hover:bg-opacity-80 focus:bg-slate-500/20 focus:bg-opacity-80 active:bg-slate-500/20 hover:text-sky-500 focus:text-sky-500 active:text-sky-500 outline-none">
+                <div class="grid place-items-center mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
+                    </svg>
+                </div>
+                Change Log
+            </a>
+        </nav>
+    </div>
+
+    <header class="h-20 fixed flex items-center lg:px-4 top-0 left-0 lg:left-[18rem] right-0 bg-dark shadow shadow-slate-500 bg-white/40 backdrop-blur-md z-40">
+        <div class="container mx-auto flex items-center justify-between lg:gap-5">
+            <button type="button" class="inline-flex items-center justify-center transition-all border rounded-md size-10 lg:hidden border-slate-200 text-slate-500 hover:text-sky-500" @click="isMenuOpen = true">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                </svg>
+            </button>
+            <h6 class="text-xl md:fs-4 font-semibold text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 hidden lg:flex">Document - v1.0.0</h6>
+            <div class="flex items-center gap-2 shrink-0">
+                <effect-custom type="button" config="{&quot;num&quot;:3}" class="call_to_action light_skew_hover is-hover">
+                    <div effect-parent="">
+                        <span style=""></span><span style=""></span><span style=""></span>
+                    </div>
+                    <a href="https://themeforest.net/item/kalles-ecommerce-html-template/32207017?s_rank=6" target="_blank" class="cta light_skew ">
+                        <svg class="cta_icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4.16686 11.6667H15.1133C15.9573 11.6667 16.3793 11.6667 16.7153 11.5093C17.0112 11.3707 17.2599 11.1481 17.4304 10.8693C17.6238 10.5528 17.6705 10.1333 17.7637 9.29448L18.2512 4.90695C18.2796 4.65073 18.2939 4.52262 18.2527 4.42346C18.2165 4.33638 18.1518 4.26414 18.0693 4.21856C17.9753 4.16666 17.8464 4.16666 17.5886 4.16666H3.7502M1.66675 1.66666H2.70711C2.92763 1.66666 3.03789 1.66666 3.12415 1.7086C3.2001 1.74552 3.26303 1.80464 3.30461 1.87813C3.35185 1.96161 3.35873 2.07166 3.37248 2.29175L4.12768 14.3749C4.14144 14.595 4.14831 14.7051 4.19555 14.7885C4.23713 14.862 4.30007 14.9211 4.37601 14.9581C4.46227 15 4.57253 15 4.79305 15H15.8334M6.25008 17.9167H6.25842M13.7501 17.9167H13.7584M6.66675 17.9167C6.66675 18.1468 6.4802 18.3333 6.25008 18.3333C6.01996 18.3333 5.83341 18.1468 5.83341 17.9167C5.83341 17.6865 6.01996 17.5 6.25008 17.5C6.4802 17.5 6.66675 17.6865 6.66675 17.9167ZM14.1667 17.9167C14.1667 18.1468 13.9802 18.3333 13.7501 18.3333C13.52 18.3333 13.3334 18.1468 13.3334 17.9167C13.3334 17.6865 13.52 17.5 13.7501 17.5C13.9802 17.5 14.1667 17.6865 14.1667 17.9167Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                        <span class="cta_text">
+                            Buy Now
+                        </span>
+                    </a>
+                </effect-custom>
+                <effect-custom type="button" config="{&quot;num&quot;:3}" class="call_to_action light_skew_hover is-hover">
+                    <div effect-parent="">
+                        <span style=""></span><span style=""></span><span style=""></span>
+                    </div>
+                    <a href="#" target="_blank" class="cta light_skew ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4 inline-block align-middle mr-1">
+                            <path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"></path>
+                            <path d="M21 16v2a4 4 0 0 1-4 4h-5"></path>
+                        </svg>
+                        <span class="cta_text">
+                            Support
+                        </span>
+                    </a>
+                </effect-custom>
+            </div>
+        </div>
+    </header>
+
+    <div class="lg:ml-[20rem] relative min-h-screen pb-20">
+        <div class="pt-28 pb-16 mx-auto px-2">
+            <div class="flex">
+                <h5 class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-emerald-600 mb-6 relative inline-block before:absolute before:inset-x-0 before:bottom-[-8px] before:h-[2px] before:bg-gradient-to-r before:from-sky-400 before:to-emerald-600">Structure</h5>
+            </div>
+            <p class="mb-4 text-slate-400"><code class="text-pink-400">Folder Structure:</code> You can follow the below folder structure for customize your project and better understanding to <span class="text-white fw-bold">Kalles</span></p>
+
+            <h5 class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-emerald-600 mb-6 relative inline-block before:absolute before:inset-x-0 before:bottom-[-8px] before:h-[2px] before:bg-gradient-to-r before:from-sky-400 before:to-emerald-600">Folder Structure</h5>
+
+            <ul class="mt-3">             
+                    <a href="#!" class="flex items-center gap-2 font-semibold">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-yellow-500 size-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                        </svg>
+                        Kalles_Laravel_v1.0.0
+                    </a>
+                    <ul class="relative mt-3 space-y-3 pl-7 before:border-l before:absolute before:border-slate-200 before:left-2 before:bottom-2 before:top-2">
+                        <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                            <a href="#!" class="flex items-center gap-2 font-semibold">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-yellow-500 size-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                                </svg>
+                                Documentation
+                            </a>
+                        </li>
+                        <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                            <a href="#!" class="flex items-center gap-2 font-semibold">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-yellow-500 size-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                                </svg>
+                                Template
+                            </a>
+                        </li>
+                        <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:bottom-0">
+                            <ul class="relative mt-3 space-y-3 pl-7 before:border-l before:absolute before:border-slate-200 before:left-2 before:bottom-2 before:top-2">
+                                <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                    <a href="#!" class="flex items-center gap-2 font-semibold">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-yellow-500 size-5">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                                        </svg>
+                                        app
+                                    </a>
+                                </li>
+                                <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                    <a href="#!" class="flex items-center gap-2 font-semibold">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-yellow-500 size-5">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                                        </svg>
+                                        bootstrap
+                                    </a>
+                                </li>
+                                <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                    <a href="#!" class="flex items-center gap-2 font-semibold">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-yellow-500 size-5">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                                        </svg>
+                                        config
+                                    </a>
+                                </li>
+                                <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                    <a href="#!" class="flex items-center gap-2 font-semibold">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-yellow-500 size-5">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                                        </svg>
+                                        database
+                                    </a>
+                                </li>
+                                <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                    <a href="#!" class="flex items-center gap-2 font-semibold">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-yellow-500 size-5">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                                        </svg>
+                                        public
+                                    </a>
+
+                                </li>
+                                <ul class="relative mt-3 space-y-3 pl-7 before:border-l before:absolute before:border-slate-200 before:left-2 before:bottom-2 before:top-2">
+                                    <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                        <a href="#!" class="flex items-center gap-2 font-semibold">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-yellow-500 size-5">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                                            </svg>
+                                            build
+                                        </a>
+                                        <ul class="relative mt-3 space-y-3 pl-7 before:border-l before:absolute before:border-slate-200 before:left-2 before:bottom-2 before:top-2">
+                                            <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                                <a href="#!" class="flex items-center gap-2 font-semibold">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-yellow-500 size-5">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                                                    </svg>
+                                                    .vite
+                                                </a>
+                                            </li>
+                                            <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                                <a href="#!" class="flex items-center gap-2 font-semibold">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-yellow-500 size-5">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                                                    </svg>
+                                                    css
+                                                </a>
+                                            </li>
+                                            <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                                <a href="#!" class="flex items-center gap-2 font-semibold">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-yellow-500 size-5">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                                                    </svg>
+                                                    fonts
+                                                </a>
+                                            </li>
+                                            <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                                <a href="#!" class="flex items-center gap-2 font-semibold">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-yellow-500 size-5">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                                                    </svg>
+                                                    icons
+                                                </a>
+                                            </li>
+                                            <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                                <a href="#!" class="flex items-center gap-2 font-semibold">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-yellow-500 size-5">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                                                    </svg>
+                                                    images
+                                                </a>
+                                            </li>
+                                            <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                                <a href="#!" class="flex items-center gap-2 font-semibold">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-yellow-500 size-5">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                                                    </svg>
+                                                    js
+                                                </a>
+                                            </li>
+                                            <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                                <a href="#!" class="flex items-center gap-2 font-semibold">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-yellow-500 size-5">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                                                    </svg>
+                                                    libs
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                        
+                                    </li>
+                                </ul>
+                                <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                    <a href="#!" class="flex items-center gap-2 font-semibold">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-yellow-500 size-5">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                                        </svg>
+                                        resources
+                                    </a>
+                                    <ul class="relative mt-3 space-y-3 pl-7 before:border-l before:absolute before:border-slate-200 before:left-2 before:bottom-2 before:top-2">
+                                        <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                            <a href="#!" class="flex items-center gap-2 font-semibold">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-yellow-500 size-5">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                                                </svg>
+                                                css
+                                            </a>
+                                        </li>
+                                        <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                            <a href="#!" class="flex items-center gap-2 font-semibold">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-yellow-500 size-5">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                                                </svg>
+                                                fonts
+                                            </a>
+                                        </li>
+                                        <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                            <a href="#!" class="flex items-center gap-2 font-semibold">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-yellow-500 size-5">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                                                </svg>
+                                                icons
+                                            </a>
+                                        </li>
+                                        <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                            <a href="#!" class="flex items-center gap-2 font-semibold">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-yellow-500 size-5">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                                                </svg>
+                                                images
+                                            </a>
+                                        </li>
+                                        <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                            <a href="#!" class="flex items-center gap-2 font-semibold">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-yellow-500 size-5">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                                                </svg>
+                                                js
+                                            </a>
+                                        </li>
+                                        <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                            <a href="#!" class="flex items-center gap-2 font-semibold">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-yellow-500 size-5">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                                                </svg>
+                                                libs
+                                            </a>
+                                        </li>
+                                        <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                            <a href="#!" class="flex items-center gap-2 font-semibold">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-yellow-500 size-5">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                                                </svg>
+                                                scss
+                                            </a>
+                                        </li>
+                                        <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                            <a href="#!" class="flex items-center gap-2 font-semibold">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-yellow-500 size-5">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                                                </svg>
+                                                videos
+                                            </a>
+                                        </li>
+                                      
+                                        <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                            <a href="#!" class="flex items-center gap-2 font-semibold">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-yellow-500 size-5">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                                                </svg>
+                                                view
+                                            </a>
+                                            <ul class="relative mt-3 space-y-3 pl-7 before:border-l before:absolute before:border-slate-200 before:left-2 before:bottom-2 before:top-2">
+                                                <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+
+                                                    <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                                        <a href="#!" class="flex items-center gap-2 font-semibold">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-yellow-500 size-5">
+                                                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                                                            </svg>
+                                                            blog
+                                                        </a>
+                                                    </li>
+            
+            
+                                                    <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                                        <a href="#!" class="flex items-center gap-2 font-semibold">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-yellow-500 size-5">
+                                                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                                                            </svg>
+                                                            home_pages
+                                                        </a>
+                                                    </li>
+            
+                                                    <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                                        <a href="#!" class="flex items-center gap-2 font-semibold">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-yellow-500 size-5">
+                                                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                                                            </svg>
+                                                            layouts
+                                                        </a>
+                                                    </li>
+            
+                                                    
+                                                <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                                    <a href="#!" class="flex items-center gap-2 font-semibold">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-yellow-500 size-5">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                                                        </svg>
+                                                        partials
+                                                    </a>
+                                                    <ul class="relative mt-3 space-y-3 pl-7 before:border-l before:absolute before:border-slate-200 before:left-2 before:bottom-2 before:top-2">
+
+                                                        <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                                            <a href="#!" class="flex items-center gap-2 font-semibold">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-slate-500">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                                                                </svg>
+                                                                card-model.blade.php
+                                                            </a>
+                                                        </li>
+                                                        <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                                            <a href="#!" class="flex items-center gap-2 font-semibold">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-slate-500">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                                                                </svg>
+                                                                footer.blade.php
+                                                            </a>
+                                                        </li>
+                                                        <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                                            <a href="#!" class="flex items-center gap-2 font-semibold">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-slate-500">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                                                                </svg>
+                                                                header.blade.php
+                                                            </a>
+                                                        </li>
+                                                        <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                                            <a href="#!" class="flex items-center gap-2 font-semibold">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-slate-500">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                                                                </svg>
+                                                                top-banner.blade.php
+                                                            </a>
+                                                        </li>
+
+                                                        <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                                            <a href="#!" class="flex items-center gap-2 font-semibold">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-slate-500">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                                                                </svg>
+                                                                vendor-scripts.blade.php
+                                                            </a>
+                                                        </li>
+                                                        <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                                            <a href="#!" class="flex items-center gap-2 font-semibold">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-slate-500">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                                                                </svg>
+                                                                All Partials blade Files
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+
+                                                <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                                    <a href="#!" class="flex items-center gap-2 font-semibold">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-yellow-500 size-5">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                                                        </svg>
+                                                        portfolio
+                                                    </a>
+                                                </li>
+                                                <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                                    <a href="#!" class="flex items-center gap-2 font-semibold">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-yellow-500 size-5">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                                                        </svg>
+                                                        product
+                                                    </a>
+                                                <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                                    <a href="#!" class="flex items-center gap-2 font-semibold">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-yellow-500 size-5">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                                                        </svg>
+                                                        shop_pages
+                                                    </a>
+                                                </li>
+                                        </li>
+
+
+                                    </ul>
+                                <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                                    <a href="#!" class="flex items-center gap-2 font-semibold">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-slate-500">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                                        </svg>
+                                        index.blade.php
+                                    </a>
+                                </li>
+                        </li>
+                     
+                    </ul>
+
+                <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                    <a href="#!" class="flex items-center gap-2 font-semibold">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-yellow-500 size-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                        </svg>
+                        route
+                    </a>
+                </li>
+                <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                    <a href="#!" class="flex items-center gap-2 font-semibold">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-yellow-500 size-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                        </svg>
+                        storage
+                    </a>
+                </li>
+                <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                    <a href="#!" class="flex items-center gap-2 font-semibold">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-yellow-500 size-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                        </svg>
+                        tests
+                    </a>
+                </li>
+                <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                    <a href="#!" class="flex items-center gap-2 font-semibold">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-slate-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                        </svg>
+                        .editorconfig
+                    </a>
+                </li>
+                <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                    <a href="#!" class="flex items-center gap-2 font-semibold">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-slate-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                        </svg>
+                        .env
+                    </a>
+                </li>
+                <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                    <a href="#!" class="flex items-center gap-2 font-semibold">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-slate-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                        </svg>
+                        .env.example
+                    </a>
+                </li>
+                <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                    <a href="#!" class="flex items-center gap-2 font-semibold">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-slate-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                        </svg>
+                        .gitattributes
+                    </a>
+                </li>
+                <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                    <a href="#!" class="flex items-center gap-2 font-semibold">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-slate-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                        </svg>
+                        artisan
+                    </a>
+                </li>
+                <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                    <a href="#!" class="flex items-center gap-2 font-semibold">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-slate-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                        </svg>
+                        composer.json
+                    </a>
+                </li>
+                <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                    <a href="#!" class="flex items-center gap-2 font-semibold">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-slate-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                        </svg>
+                        composer.lock
+                    </a>
+                </li>
+                <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                    <a href="#!" class="flex items-center gap-2 font-semibold">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-slate-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                        </svg>
+                        package.json
+                    </a>
+                </li>
+                <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                    <a href="#!" class="flex items-center gap-2 font-semibold">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-slate-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                        </svg>
+                        package-libs-config.json
+                    </a>
+                </li>
+                <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                    <a href="#!" class="flex items-center gap-2 font-semibold">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-slate-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                        </svg>
+                        package-lock.json
+                    </a>
+                </li>
+                <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                    <a href="#!" class="flex items-center gap-2 font-semibold">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-slate-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                        </svg>
+                        phpunit.xml
+                    </a>
+                </li>
+                <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                    <a href="#!" class="flex items-center gap-2 font-semibold">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-slate-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                        </svg>
+                        preload.js
+                    </a>
+                </li>
+                <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                    <a href="#!" class="flex items-center gap-2 font-semibold">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-slate-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                        </svg>
+                        README.md
+                    </a>
+                </li>
+                <li class="relative before:absolute before:size-2 before:border-slate-200 before:border before:bg-white before:-left-[23px] before:rounded-full before:top-2">
+                    <a href="#!" class="flex items-center gap-2 font-semibold">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-slate-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                        </svg>
+                        vite.config.js
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <footer class="h-20 fixed flex items-center px-5 bottom-0 left-0 lg:left-[18rem] right-0 bg-dark backdrop-blur-md shadow shadow-slate-500 z-40 py-6 text-slate-300 text-center">
+            <div class="mx-auto px-2">
+                <p>&copy;
+                    <script>
+                        var year = new Date(); document.write(year.getFullYear());
+                    </script> Kalles Crafted by <a href="#!" class="font-semibold">SRBthemes</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+
+<!-- Mirrored from srbthemes.kcubeinfotech.com/kalles/docs/laravel/structure.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Feb 2026 06:03:23 GMT -->
+</html>
